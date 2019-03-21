@@ -42,7 +42,7 @@ function Hero(spriteTexture, atX, atY, camRef = null) {
 
     GameObject.call(this, this.mKelvin);
 
-    var r = new RigidRectangle(this.getXform(), this.kWidth , this.kHeight );
+    var r = new RigidRectangle(this.getXform(), this.kWidth*.8, this.kHeight );
     this.setRigidBody(r);
     r.setMass(40);     // high mass so wont get affected by other object much
     r.setRestitution(-0.1); // higher means more bouncy
